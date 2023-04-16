@@ -17,6 +17,9 @@ export default function Navbar() {
                 <li className={""}>
                     <Link href={"/contact"}>Contact</Link>
                 </li>
+                <li className={""}>
+                    <a href="https://amanvarshney.hashnode.dev/" rel="noopener noreferrer" target={"_blank"}>Blog</a>
+                </li>
             </ul>
         </nav>
     )
