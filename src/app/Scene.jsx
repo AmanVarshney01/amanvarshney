@@ -11,7 +11,7 @@ export default function Scene({ ...props }) {
         <>
             <color attach="background" args={['#ffffff']} />
             <group {...props} dispose={null}>
-                <group name="Text" position={[0,0,0]}>
+                <group name="Text" position={[5,-10,-30]}>
                     <mesh
                         name="Text 2"
                         geometry={nodes['Text 2'].geometry}
