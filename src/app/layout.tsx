@@ -1,7 +1,7 @@
 import './globals.css'
 import {Chivo_Mono} from "next/font/google";
 import Navbar from "@/app/navbar";
-import TextCanvas from "@/app/textCanvas";
+import MainCanvas from "@/app/mainCanvas";
 
 const font = Chivo_Mono({subsets: ['latin']})
 
@@ -17,12 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className}`}>
+      <body className={`${font.className} relative`}>
       <Navbar />
-      <div className={"w-full h-1/2 fixed bottom-0 -left-80"}>
-          <TextCanvas />
-      </div>
       {children}
+      <MainCanvas />
       </body>
     </html>
   )
