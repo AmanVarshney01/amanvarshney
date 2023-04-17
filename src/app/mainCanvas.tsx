@@ -19,26 +19,9 @@ export default function MainCanvas () {
                     <NameText />
                     <Room />
                 </group>
-                {/*<mesh castShadow receiveShadow position={[0,-5,0]}>*/}
-                {/*    <boxGeometry  />*/}
-                {/*    <meshStandardMaterial color={"red"}/>*/}
-                {/*</mesh>*/}
-                {/*<directionalLight position={[5, 5, 5]} intensity={0.5} shadow-mapSize={1024} castShadow />*/}
                 <color attach={"background"} args={["#121212"]} />
                 <pointLight intensity={1} position={[4,5,5]} castShadow={true} />
                 <ambientLight intensity={0.5} />
-                {/*<PerspectiveCamera*/}
-                {/*    name="1"*/}
-                {/*    makeDefault={true}*/}
-                {/*    far={1000}*/}
-                {/*    near={1}*/}
-                {/*    fov={45}*/}
-                {/*    position={[0,-10,20]}*/}
-                {/*    rotation={[0, 0,0]}*/}
-                {/*    scale={1}*/}
-                {/*/>*/}
-                {/*<color attach={"background"} args={["#ffffff"]} />*/}
-                {/*<Scene />*/}
                 {/*<OrbitControls />*/}
             </Canvas>
         </section>
