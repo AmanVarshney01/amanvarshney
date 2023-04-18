@@ -8,6 +8,10 @@ const font = Chivo_Mono({subsets: ['latin']})
 export const metadata = {
   title: 'Aman Varshney',
   description: 'Portfolio of Aman Varshney',
+  icons: {
+      icon: './favicon.ico',
+      shortcut: './favicon.ico'
+  }
 }
 
 export default function RootLayout({
