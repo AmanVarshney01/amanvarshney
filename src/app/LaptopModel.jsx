@@ -1,4 +1,3 @@
-import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function LaptopModel(props) {
@@ -13,7 +12,6 @@ export default function LaptopModel(props) {
                         scale={100}
                     >
                         <mesh
-
                             geometry={nodes.Frame_ComputerFrame_0.geometry}
                             material={materials.ComputerFrame}
                         />

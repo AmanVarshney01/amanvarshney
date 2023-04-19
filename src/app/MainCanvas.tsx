@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import NameText from "@/app/nameText";
 import LaptopModel from "@/app/LaptopModel"
 import NotebookModel from "@/app/NotebookModel"
+import DeskModel from "@/app/DeskModel"
 import Room from "@/app/room";
 
 
@@ -22,9 +23,10 @@ export default function MainCanvas () {
                     <Room />
                     <LaptopModel />
                     <NotebookModel />
+                    <DeskModel />
                 </group>
                 <color attach={"background"} args={["#121212"]} />
-                <pointLight intensity={1} position={[4,5,5]} castShadow={true} />
+                <pointLight intensity={1} position={[-3,4,2]} castShadow={true} />
                 <ambientLight intensity={0.5} />
                 {/*<OrbitControls />*/}
             </Canvas>
