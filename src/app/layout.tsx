@@ -1,7 +1,7 @@
 import './globals.css'
 import {Chivo_Mono} from "next/font/google";
 import Navbar from "@/app/navbar";
-import MainCanvas from "@/app/mainCanvas";
+import MainCanvas from "@/app/MainCanvas";
 
 const font = Chivo_Mono({subsets: ['latin']})
 
@@ -9,8 +9,8 @@ export const metadata = {
   title: 'Aman Varshney',
   description: 'Portfolio of Aman Varshney',
   icons: {
-      icon: './favicon.ico',
-      shortcut: './favicon.ico'
+      icon: '/favicon.png',
+      shortcut: '/favicon.png'
   }
 }
 
