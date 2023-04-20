@@ -1,6 +1,9 @@
 import { useGLTF } from "@react-three/drei";
+import MovableDrawer from "@/app/MovableDrawer";
 
 export default function DeskModel(props) {
+
+
     const { nodes } = useGLTF("/desk_w_assets.glb");
     return (
         <group {...props} dispose={null} scale={0.5} position={[5,-5,-8.6]}>
@@ -40,16 +43,7 @@ export default function DeskModel(props) {
                     </mesh>
                     </group>
                     {/*top drawer*/}
-                    <group position={[4.79, 3.23, 1.18]} scale={[4.18, 1, 4.58]}>
-                        <mesh
-                            castShadow={true}
-                            receiveShadow={true}
-                            geometry={nodes.pCube4_lambert1_0.geometry}
-                            // material={materials.lambert1}
-                        >
-                        <meshStandardMaterial color={'#A1662F'} />
-                    </mesh>
-                    </group>
+                    <MovableDrawer />
                 </group>
             </group>
         </group>

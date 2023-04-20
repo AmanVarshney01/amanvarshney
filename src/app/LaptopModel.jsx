@@ -14,6 +14,8 @@ export default function LaptopModel(props) {
                         <mesh
                             geometry={nodes.Frame_ComputerFrame_0.geometry}
                             material={materials.ComputerFrame}
+                            castShadow={true}
+
                         />
                     </group>
                     <group
@@ -24,6 +26,7 @@ export default function LaptopModel(props) {
                         <mesh
                             geometry={nodes.Screen_ComputerScreen_0.geometry}
                             material={materials.ComputerScreen}
+                            castShadow={true}
                         />
                     </group>
                 </group>

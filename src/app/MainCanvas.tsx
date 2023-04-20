@@ -15,7 +15,7 @@ export default function MainCanvas () {
                 position: [0,0,18],
                 near: 1,
                 far: 100,
-                fov: 50
+                fov: 45
             }} >
                 {/*rotation={[Math.PI / 6,0,0]}*/}
                 <group scale={1} position={[-5,-1,0]} rotation={[0, 0,0]}>
@@ -24,6 +24,7 @@ export default function MainCanvas () {
                     <LaptopModel />
                     <NotebookModel />
                     <DeskModel />
+                    {/*<rectAreaLight rotation={[0,-Math.PI / 2,0]} position={[-9,3,2]} width={5} height={5} intensity={10} color={"white"} />*/}
                 </group>
                 <color attach={"background"} args={["#121212"]} />
                 <pointLight intensity={1} position={[-3,4,2]} castShadow={true} />
