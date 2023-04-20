@@ -43,7 +43,7 @@ export default function DeskModel(props) {
                     </mesh>
                     </group>
                     {/*top drawer*/}
-                    <MovableDrawer />
+                    <MovableDrawer nodes={nodes}/>
                 </group>
             </group>
         </group>

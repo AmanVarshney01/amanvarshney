@@ -1,9 +1,7 @@
 import {useState} from "react";
-import {useGLTF} from "@react-three/drei";
 
-export default function MovableDrawer () {
+export default function MovableDrawer ({nodes}) {
 
-    const { nodes } = useGLTF("/desk_w_assets.glb");
     const [isActive, setActive] = useState(false)
 
     return (
