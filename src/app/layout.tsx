@@ -2,6 +2,7 @@ import './globals.css'
 import {Chivo_Mono} from "next/font/google";
 import Navbar from "@/app/navbar";
 import MainCanvas from "@/app/MainCanvas";
+import {Analytics} from "@vercel/analytics/react";
 
 const font = Chivo_Mono({subsets: ['latin']})
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <Navbar />
       <MainCanvas />
       {children}
+      <Analytics />
       </body>
     </html>
   )
