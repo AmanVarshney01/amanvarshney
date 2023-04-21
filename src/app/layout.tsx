@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} relative`}>
       <Navbar />
-      {children}
       <MainCanvas />
+      {children}
       </body>
     </html>
   )

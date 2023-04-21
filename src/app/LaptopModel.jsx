@@ -19,7 +19,6 @@ export default function LaptopModel(props) {
                             geometry={nodes.Frame_ComputerFrame_0.geometry}
                             material={materials.ComputerFrame}
                             castShadow={true}
-
                         />
                     </group>
                     <group

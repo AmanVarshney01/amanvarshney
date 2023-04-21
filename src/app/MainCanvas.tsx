@@ -5,6 +5,7 @@ import NameText from "@/app/nameText";
 import LaptopModel from "@/app/LaptopModel"
 import NotebookModel from "@/app/NotebookModel"
 import DeskModel from "@/app/DeskModel"
+import BulbModel from "@/app/BulbModel"
 import Room from "@/app/room";
 
 
@@ -24,11 +25,9 @@ export default function MainCanvas () {
                     <LaptopModel />
                     <NotebookModel />
                     <DeskModel />
-                    {/*<rectAreaLight rotation={[0,-Math.PI / 2,0]} position={[-9,3,2]} width={5} height={5} intensity={10} color={"white"} />*/}
+                    <BulbModel />
                 </group>
                 <color attach={"background"} args={["#121212"]} />
-                <pointLight intensity={1} position={[-3,4,2]} castShadow={true} />
-                <ambientLight intensity={0.5} />
                 {/*<OrbitControls />*/}
             </Canvas>
         </section>
