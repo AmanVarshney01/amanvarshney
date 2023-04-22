@@ -24,9 +24,11 @@ export default function MainCanvas () {
                 <group scale={1} position={[-5,-1,0]} rotation={[0, 0,0]}>
                     <NameText />
                     <Room />
-                    <LaptopModel />
-                    <NotebookModel />
-                    <DeskModel />
+                    <group position={[-3,0,0]}>
+                        <LaptopModel />
+                        <NotebookModel />
+                        <DeskModel />
+                    </group>
                     <BulbModel />
                     <TorchModel />
                     {/*<Text*/}

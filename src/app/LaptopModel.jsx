@@ -7,7 +7,7 @@ export default function LaptopModel(props) {
 
     const { nodes, materials } = useGLTF("/laptop.glb");
     return (
-        <group {...props} dispose={null} position={[15,-5,-6]} rotation={[0, -Math.PI / 3, 0]} scale={0.1} onClick={() => setOpen(!isOpen)}>
+        <group {...props} dispose={null} position={[6,-2.95,-8.5]} rotation={[0, -Math.PI / 3, 0]} scale={0.08} onClick={() => setOpen(!isOpen)}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
                 <group rotation={[Math.PI / 2, 0, 0]}>
                     <group

@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 export default function NotebookModel(props) {
     const { nodes } = useGLTF("/exercise_book.glb");
     return (
-        <group position={[12,-5,-4]} scale={15} {...props} dispose={null}>
+        <group position={[3.5,-2.94,-8]} scale={15} {...props} dispose={null}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
                 <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
                     <mesh
