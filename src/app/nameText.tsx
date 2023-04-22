@@ -10,6 +10,7 @@ export default function NameText() {
             AMAN VARSHNEY
             <meshStandardMaterial
                 color={"#f26a8d"}
+                roughness={1}
                 // color={"white"}
             />
         </Text3D>

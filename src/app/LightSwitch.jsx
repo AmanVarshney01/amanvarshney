@@ -15,7 +15,10 @@ export default function LightSwitch({nodes, materials}) {
             >
                 <pointLight position={[0,-2,0]} intensity={isLightOn ? 1 : 0} castShadow={true} />
             </mesh>
-            <ambientLight intensity={isLightOn ? 0.5 : 0.1} />
+            <ambientLight
+                intensity={isLightOn ? 0.5 : 0.15}
+                // color={"#223344"}
+            />
             <style jsx global>
                 {`
                   body {
