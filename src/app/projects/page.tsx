@@ -1,7 +1,7 @@
 export default function Page() {
     return (
-        <section className="flex w-full justify-end h-screen z-10 absolute top-0 left-0 ">
-            <div className={"w-1/2 flex justify-center items-center"}>
+        <section className="w-1/2 h-screen">
+            <div className={"w-full flex flex-col items-center p-10"}>
                 <h1 className={""}>Projects</h1>
             </div>
         </section>

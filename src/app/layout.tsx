@@ -24,8 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} relative`}>
       <Navbar />
-      <MainCanvas />
-      {children}
+      <div className={"flex flex-col lg:flex-row"}>
+          <MainCanvas />
+          {children}
+      </div>
+
       <Analytics />
       </body>
     </html>
