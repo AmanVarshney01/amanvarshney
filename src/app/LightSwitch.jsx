@@ -22,7 +22,8 @@ export default function LightSwitch({nodes, materials}) {
             <style jsx global>
                 {`
                   body {
-                    color: ${isLightOn ? 'black' : 'white'}
+                    color: ${isLightOn ? 'black' : 'white'};
+                    background-color: ${isLightOn ? "#f2f2f2" : '#121212'};
                   }
                 `}
             </style>

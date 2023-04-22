@@ -5,7 +5,8 @@ export default function TorchModel(props) {
     const { nodes, materials } = useGLTF("/Flashlight.glb");
     const [isLightOn, setLightOn] = useState(false)
     return (
-            <group onClick={() => setLightOn(!isLightOn)} scale={0.08} position={[-8,-4.7,-8]} rotation={[0, -Math.PI / 1.5, -Math.PI / 8]} {...props} dispose={null}>
+        <>
+            <group onClick={() => setLightOn(!isLightOn)} scale={0.06} position={[-7,-4.80,-7]} rotation={[0, -Math.PI / 1.3, 0]} {...props} dispose={null}>
                 <mesh
                     castShadow={true}
                     receiveShadow={true}
@@ -24,20 +25,23 @@ export default function TorchModel(props) {
                     geometry={nodes.Flashlight_1_2.geometry}
                     material={materials["02___Default"]}
                 >
-                    <spotLight
-
-                        angle={Math.PI / 6}
-                        position={[0, 0, -5]}
-                        rotation={[0,Math.PI /2,0]}
-                        distance={0}
-                        decay={2}
-                        color="white"
-                        intensity={isLightOn ? 2 : 0}
-                        castShadow={true}
-                    />
-                    <pointLight intensity={isLightOn ? 1 : 0} position={[0, 5,-15]}/>
+                    {/*<pointLight intensity={isLightOn ? 1 : 0} position={[0,8,-18]}/>*/}
                 </mesh>
+                <spotLight
+
+                    angle={Math.PI / 5}
+                    // rotation={[0,Math.PI/ 2,0]}
+                    position={[0,40,65]}
+                    distance={0}
+                    decay={2}
+                    color="white"
+                    intensity={isLightOn ? 2 : 0}
+                    castShadow={true}
+                    penumbra={0.2}
+                />
             </group>
+        </>
+
     );
 }
 
