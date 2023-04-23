@@ -1,22 +1,13 @@
-import Link from "next/link";
-
+import NavButton from "@/app/NavButton";
 
 export default function Navbar() {
     return (
-        <nav className={"absolute right-0 z-50"}>
-            <ul className={""}>
-                <li className={""}>
-                    <Link href={"/"}>Home</Link>
-                </li>
-                <li className={""}>
-                    <Link href={"/about"}>About</Link>
-                </li>
-                <li className={""}>
-                    <Link href={"/projects"}>Projects</Link>
-                </li>
-                <li className={""}>
-                    <Link href={"/contact"}>Contact</Link>
-                </li>
+        <nav className={"w-full p-4"}>
+            <ul className={"flex flex-row w-full justify-evenly"}>
+                <NavButton title={'Home'} href={'/'} />
+                <NavButton title={'About'} href={'/about'} />
+                <NavButton title={'Projects'} href={'/projects'} />
+                {/*<NavButton title={'Home'} href={'/'} />*/}
                 <li className={""}>
                     <a href="https://amanvarshney.hashnode.dev/" rel="noopener noreferrer" target={"_blank"}>Blog</a>
                 </li>

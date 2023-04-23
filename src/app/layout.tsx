@@ -3,6 +3,7 @@ import {Chivo_Mono} from "next/font/google";
 import Navbar from "@/app/navbar";
 import MainCanvas from "@/app/MainCanvas";
 import {Analytics} from "@vercel/analytics/react";
+import Footer from "@/app/Footer";
 
 const font = Chivo_Mono({subsets: ['latin']})
 
@@ -22,11 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} relative`}>
-      <Navbar />
+      <body className={font.className}>
       <div className={"flex flex-col lg:flex-row"}>
           <MainCanvas />
-          {children}
+          <div className={"w-full flex flex-col"}>
+              <Navbar />
+              {children}
+              <Footer />
+          </div>
       </div>
 
       <Analytics />

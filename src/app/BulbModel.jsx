@@ -21,8 +21,8 @@ export default function BulbModel(props) {
                     receiveShadow={true}
                     geometry={nodes.cable.geometry}
                     material={materials.cable}
-                    position={[0, 5.72, 0]}
-                    scale={[1,2,1]}
+                    position={[0, 12, 0]}
+                    scale={[1,3,1]}
                 />
             </group>
         </>
