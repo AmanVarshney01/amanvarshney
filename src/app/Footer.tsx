@@ -5,7 +5,7 @@ import twitter from 'public/twitter.svg'
 
 export default function Footer () {
     return (
-        <footer className={"p-4 flex flex-row justify-between"}>
+        <footer className={"p-4 flex flex-row justify-between items-center"}>
             <div>
                 <a className={"font-medium"} href="mailto: av.amanvarshney11@gmail.com">av.amanvarshney11@gmail.com</a>
             </div>
