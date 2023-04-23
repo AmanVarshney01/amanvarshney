@@ -5,3 +5,17 @@
 body {
     color: black;
 }
+
+#project-container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+#project-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#project-container::-webkit-scrollbar-thumb {
+    background: grey;
+    @apply rounded;
+}
+

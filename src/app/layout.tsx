@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={font.className}>
       <div className={"flex flex-col lg:flex-row"}>
           <MainCanvas />
-          <div className={"w-full flex flex-col"}>
+          <div className={"w-full max-h-screen flex flex-col"}>
               <Navbar />
               {children}
               <Footer />
