@@ -7,7 +7,7 @@ export default function Footer () {
     return (
         <footer className={"p-4 flex flex-row justify-between items-center"}>
             <div>
-                <a className={"font-medium"} href="mailto: av.amanvarshney11@gmail.com">av.amanvarshney11@gmail.com</a>
+                <a className={"font-medium hover:underline"} href="mailto: av.amanvarshney11@gmail.com">av.amanvarshney11@gmail.com</a>
             </div>
             <div className={"flex flex-row gap-4"}>
                 <SocialButton title={"Github"} href={"https://github.com/AmanVarshney01"} src={github} />
