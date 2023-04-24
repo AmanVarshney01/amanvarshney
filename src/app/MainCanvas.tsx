@@ -14,7 +14,7 @@ import {Suspense} from "react";
 
 export default function MainCanvas () {
     return (
-        <section className={"w-full h-screen"}>
+        <section className={" lg:w-full lg:h-[100svh] h-[50vh]"}>
             <Suspense fallback={<span className={"flex items-center justify-center text-2xl font-medium h-full w-full"}><span>Loading...</span></span>}>
                 <Canvas frameloop="demand" shadows camera={{
                     position: [0,0,18],

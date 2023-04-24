@@ -9,7 +9,7 @@ export default function NavButton({title, href}: {title: string, href: string}) 
     return (
         <m.li whileHover={{scale: 1.1}} whileTap={{scale: 0.95}} className={""}>
             <Link className={"relative transition ease-in duration-200 font-medium text-lg"} href={href}>
-                {href === path && (<m.span layoutId="nav-underline" className={"absolute left-0 top-full block h-[2px] bg-black w-full"} />)}
+                {href === path && (<m.span layoutId="nav-underline" className={"absolute left-0 top-full block h-[2px] bg-black w-full rounded-2xl"} />)}
                 {title}
             </Link>
         </m.li>

@@ -13,6 +13,10 @@ export default function Room () {
                 <planeGeometry args={[30,20]}/>
                 <meshStandardMaterial color={"#C8CBCB"} />
             </mesh>
+            <mesh receiveShadow={true} position={[20,5,0]} rotation={[0, -Math.PI / 2, 0]}>
+                <planeGeometry args={[20,20]}/>
+                <meshStandardMaterial color={"#889ebb"} />
+            </mesh>
         </group>
     )
 }
