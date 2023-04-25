@@ -9,7 +9,7 @@ export default function Home() {
               <div className={"flex flex-col gap-4 h-full"}>
                   <Image className={"rounded-full w-1/5 h-auto"} width={300} height={300} src={photo} alt={"Aman Varshney"} />
                   <h1 className={"text-3xl"}>Aman Varshney</h1>
-                  <p className={"leading-8 text-justify"}>I am a first year B.Tech CSE student with a keen interest in web development. My current focus is on building projects using Next.js, Tailwind. As a continuous learner, I'm always striving to improve my skills and create exciting new web experiences.</p>
+                  <p className={"leading-8 text-justify"}>I am a first year B.Tech CSE student with a keen interest in web development. My current focus is on building projects using Next.js, Tailwind. As a continuous learner, I am always striving to improve my skills and create exciting new web experiences.</p>
                   <div className={"flex items-center justify-center w-full"}>
                       <Marquee text={"Next.js Tailwind React Svelte Javascript Typescript Python"} />
                   </div>
