@@ -26,3 +26,20 @@ body {
     @apply rounded;
 }
 
+#marquee-container h2 {
+    animation: move-rtl 20s linear infinite;
+}
+
+/*#marquee-container h2:hover {*/
+/*    animation-play-state: paused;*/
+/*}*/
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
