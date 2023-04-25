@@ -9,11 +9,11 @@ export default function ProjectCard ({src, name, description, link, github}: {sr
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <m.div initial={{y:10, opacity: 0}} animate={{y:0, opacity: 1}} className={"p-3 flex flex-col gap-2 shadow h-min"}>
+        <m.div initial={{y:10, opacity: 0}} animate={{y:0, opacity: 1}} className={"p-3 flex flex-col gap-2 h-min"}>
             <Image className={"w-full"} width={350} src={src} alt={name} />
             <div className={"flex flex-row justify-between items-center"}>
                 <h2 className={"font-medium text-lg"}>{name}</h2>
-                <m.div animate={{rotate: isOpen ? 180 : 0}} className={"hover:cursor-pointer"} onClick={() => setIsOpen(!isOpen)}>
+                <m.div animate={{rotate: isOpen ? 180 : 0}} className={"hover:cursor-pointer bg-gray-200 rounded-full"} onClick={() => setIsOpen(!isOpen)}>
                     <Image width={20} height={20} src={dropdown} alt={"arrow"} />
                 </m.div>
             </div>
