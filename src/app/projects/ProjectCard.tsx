@@ -9,7 +9,7 @@ export default function ProjectCard ({src, name, description, link, github}: {sr
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <m.div initial={{y:10, opacity: 0}} animate={{y:0, opacity: 1}} className={"p-3 flex flex-col gap-1 shadow h-min"}>
+        <m.div initial={{y:10, opacity: 0}} animate={{y:0, opacity: 1}} className={"p-3 flex flex-col gap-2 shadow h-min"}>
             <Image className={"w-full"} width={350} src={src} alt={name} />
             <div className={"flex flex-row justify-between items-center"}>
                 <h2 className={"font-medium text-lg"}>{name}</h2>

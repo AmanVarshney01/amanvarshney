@@ -7,9 +7,13 @@ import NotebookModel from "@/app/NotebookModel"
 import DeskModel from "@/app/DeskModel"
 import BulbModel from "@/app/BulbModel"
 import TorchModel from "@/app/TorchModel"
+import BedModel from "@/app/BedModel"
+import OrbitControlsSwitch from "@/app/OrbitControlsSwitch";
+// import LockModel from "@/app/LockModel"
 // import WindowModel from "@/app/WindowModel"
 import Room from "@/app/room";
 import {Suspense} from "react";
+// import {OrbitControls} from "@react-three/drei";
 
 
 export default function MainCanvas () {
@@ -35,6 +39,8 @@ export default function MainCanvas () {
                         </group>
                         <BulbModel />
                         <TorchModel />
+                        <BedModel />
+                        <OrbitControlsSwitch />
                         {/*<Text*/}
 
                         {/*    position={[0, 0, -9.9]}*/}
@@ -46,9 +52,9 @@ export default function MainCanvas () {
                         {/*    Text on Wall*/}
                         {/*</Text>*/}
                         {/*<WindowModel rotation={[0, -Math.PI / 2, 0]} position={[-9.6,0,-4.5]} scale={1.5} />*/}
+                        {/*<directionalLight castShadow={true} color="" intensity={0.1} position={[10, 1, 0]} />*/}
                     </group>
                     <color attach={"background"} args={["#121212"]} />
-                    {/*<OrbitControls />*/}
                 </Canvas>
             </Suspense>
         </section>

@@ -10,6 +10,7 @@
 
 body {
     color: black;
+    background-color: #f2f2f2;
 }
 
 #project-container::-webkit-scrollbar {
