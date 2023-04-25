@@ -10,10 +10,10 @@ export default function LightSwitch({nodes, materials}) {
                 castShadow={true}
                 receiveShadow={true}
                 geometry={nodes.Light_2.geometry}
-                material={isLightOn ? materials.light : new MeshStandardMaterial({color: 'white'})}
+                material={isLightOn ? new MeshStandardMaterial({color: '#ffffff'}) : new MeshStandardMaterial({color: '#b6b6b6'})}
                 onClick={() => setLightOn(!isLightOn)}
             >
-                <pointLight position={[0,-2,0]} intensity={isLightOn ? 1 : 0} castShadow={true} />
+                <pointLight color={"#d9d9d9"} position={[0,-2,0]} intensity={isLightOn ? 1 : 0} castShadow={true} />
             </mesh>
             <ambientLight
                 intensity={isLightOn ? 0.5 : 0.3}
