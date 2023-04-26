@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image";
 import sadMeme from 'public/sad-crying-face.gif'
 
@@ -8,7 +7,7 @@ export default function NotFound() {
             <Image className={" p-10 w-full h-auto"} src={sadMeme} alt={"Sad"} />
             <div className={"flex flex-col justify-center items-center gap-4"}>
                 <h1 className={"text-lg font-bold "}>Sorry Page Not Found</h1>
-                <button className={"hover:underline"} onClick={() => window.location.reload()}>Refresh Page</button>
+                <p>Try Refreshing Page</p>
             </div>
         </div>
     );
