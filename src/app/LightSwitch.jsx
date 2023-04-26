@@ -1,8 +1,14 @@
 import {useState} from "react";
 import {MeshStandardMaterial} from "three";
 
-export default function LightSwitch({nodes, materials}) {
+export default function LightSwitch({nodes}) {
     const [isLightOn, setLightOn] = useState(true)
+
+    if (!isLightOn) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
 
     return (
         <>
@@ -19,14 +25,14 @@ export default function LightSwitch({nodes, materials}) {
                 intensity={isLightOn ? 0.5 : 0.3}
                 // color={"#223344"}
             />
-            <style jsx global>
-                {`
-                  body {
-                    color: ${isLightOn ? 'black' : 'white'};
-                    background-color: ${isLightOn ? "#f2f2f2" : '#121212'};
-                  }
-                `}
-            </style>
+            {/*<style jsx global>*/}
+            {/*    {`*/}
+            {/*      body {*/}
+            {/*        color: ${isLightOn ? 'black' : 'white'};*/}
+            {/*        background-color: ${isLightOn ? "#f2f2f2" : '#121212'};*/}
+            {/*      }*/}
+            {/*    `}*/}
+            {/*</style>*/}
         </>
     )
 }
