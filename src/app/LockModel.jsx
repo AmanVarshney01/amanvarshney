@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 export default function LockModel(props) {
     const { nodes} = useGLTF("/Simple Padlock.glb");
     return (
-        <group scale={1.2} position={[-6,-4.6,-9.8]} rotation={[0,-Math.PI/2, Math.PI / 6]} {...props} dispose={null}>
+        <group scale={1.5} position={[-6,-4.6,-9.8]} rotation={[0,-Math.PI/2, Math.PI / 6]} {...props} dispose={null}>
             <mesh
                 castShadow={true}
                 receiveShadow={true}
