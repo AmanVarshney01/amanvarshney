@@ -9,8 +9,8 @@ export default function ProjectCard ({src, name, description, link, github}: {sr
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <m.div initial={{y:10, opacity: 0}} animate={{y:0, opacity: 1}} className={"p-3 flex flex-col gap-2 h-min"}>
-            <Image className={"w-full"} width={350} src={src} alt={name} />
+        <m.div className={"p-3 flex flex-col gap-2 h-min"}>
+            <Image placeholder={"blur"} loading={"lazy"} className={"w-full"} width={350} src={src} alt={name} />
             <div className={"flex flex-row justify-between items-center"}>
                 <h2 className={"font-medium text-lg"}>{name}</h2>
                 <m.div animate={{rotate: isOpen ? 180 : 0}} className={"hover:cursor-pointer bg-gray-200 rounded-full"} onClick={() => setIsOpen(!isOpen)}>
@@ -20,7 +20,11 @@ export default function ProjectCard ({src, name, description, link, github}: {sr
             <AnimatePresence key={name}>
                 {isOpen &&
                     <m.div transition={{duration: 0.1, ease: "linear"}} initial={{y:-5, opacity: 0}} animate={{y:0, opacity: 1}} exit={{y:-5, opacity: 0}} className={""}>
-                        {description}
+                        <p>{description}</p>
+                        <div className={"flex flex-row gap-2 mt-1"}>
+                            {link && <a href={link} target={"_blank"} className={"underline text-blue-600"}>Open</a>}
+                            {github && <a href={github} target={"_blank"} className={"underline text-blue-600"}>Github</a>}
+                        </div>
                     </m.div>
                 }
             </AnimatePresence>
