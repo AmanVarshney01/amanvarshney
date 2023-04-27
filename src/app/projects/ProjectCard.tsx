@@ -4,9 +4,10 @@ import {AnimatePresence, motion as m} from "framer-motion";
 import {useState} from "react";
 import dropdown from "public/dropdown.svg";
 
-export default function ProjectCard ({src, name, description, link, github}: {src: any, name: string, description?: string, link?: string, github?: string}) {
+export default function ProjectCard ({src, name, description, link, github, inDevelopment}: {src: any, name: string, description?: string, link?: string, github?: string, inDevelopment?: boolean}) {
 
     const [isOpen, setIsOpen] = useState(false)
+    const isDev = inDevelopment ?? false
 
     return (
         <m.div className={"p-3 flex flex-col gap-2 h-min"}>
@@ -25,6 +26,7 @@ export default function ProjectCard ({src, name, description, link, github}: {sr
                             {link && <a href={link} target={"_blank"} className={"underline text-blue-600"}>Open</a>}
                             {github && <a href={github} target={"_blank"} className={"underline text-blue-600"}>Github</a>}
                         </div>
+                        {isDev && <p className={"text-red-500 text-sm mt-1"}>This project is still in development</p>}
                     </m.div>
                 }
             </AnimatePresence>
