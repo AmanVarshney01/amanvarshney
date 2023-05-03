@@ -1,6 +1,6 @@
 "use client";
 import {OrbitControls} from "@react-three/drei";
-import LockModel from "@/app/LockModel";
+import LockModel from "src/models/LockModel";
 import {useState} from "react";
 
 export default function OrbitControlsSwitch() {

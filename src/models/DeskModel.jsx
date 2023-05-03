@@ -1,5 +1,5 @@
 import { useGLTF } from "@react-three/drei";
-import MovableDrawer from "@/app/MovableDrawer";
+import MovableDrawer from "src/models/MovableDrawer";
 
 export default function DeskModel(props) {
 

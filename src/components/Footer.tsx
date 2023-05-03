@@ -1,4 +1,4 @@
-import SocialButton from "@/app/SocialButton";
+import SocialButton from "@/components/SocialButton";
 import github from 'public/github.svg'
 import linkedin from 'public/linkedin.svg'
 import twitter from 'public/twitter.svg'

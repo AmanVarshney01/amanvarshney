@@ -1,9 +1,9 @@
 import './globals.css'
 import {Chivo_Mono} from "next/font/google";
-import Navbar from "@/app/navbar";
-import MainCanvas from "@/app/MainCanvas";
+import Navbar from "@/components/navbar";
+import MainCanvas from "@/components/MainCanvas";
 import {Analytics} from "@vercel/analytics/react";
-import Footer from "@/app/Footer";
+import Footer from "@/components/Footer";
 
 const font = Chivo_Mono({subsets: ['latin']})
 

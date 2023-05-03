@@ -1,17 +1,17 @@
 "use client";
 import { Canvas } from '@react-three/fiber'
 // import {OrbitControls, PerspectiveCamera, Text} from '@react-three/drei'
-import NameText from "@/app/nameText";
-import LaptopModel from "@/app/LaptopModel"
-import NotebookModel from "@/app/NotebookModel"
-import DeskModel from "@/app/DeskModel"
-import BulbModel from "@/app/BulbModel"
-import TorchModel from "@/app/TorchModel"
-import BedModel from "@/app/BedModel"
-import OrbitControlsSwitch from "@/app/OrbitControlsSwitch";
+import NameText from "@/components/nameText";
+import LaptopModel from "@/models/LaptopModel"
+import NotebookModel from "@/models/NotebookModel"
+import DeskModel from "@/models/DeskModel"
+import BulbModel from "@/models/BulbModel"
+import TorchModel from "@/models/TorchModel"
+import BedModel from "@/models/BedModel"
+import OrbitControlsSwitch from "@/components/OrbitControlsSwitch";
 // import LockModel from "@/app/LockModel"
 // import WindowModel from "@/app/WindowModel"
-import Room from "@/app/room";
+import Room from "@/components/room";
 import {Suspense} from "react";
 // import {OrbitControls} from "@react-three/drei";
 

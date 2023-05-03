@@ -1,5 +1,5 @@
 import {useGLTF} from "@react-three/drei";
-import LightSwitch from "@/app/LightSwitch";
+import LightSwitch from "src/models/LightSwitch";
 
 export default function BulbModel(props) {
     const { nodes, materials } = useGLTF("/Light bulb.glb");

@@ -1,6 +1,6 @@
 
-import Marquee from "@/app/Marquee";
-import Photo from "@/app/Photo";
+import Marquee from "@/components/Marquee";
+import Photo from "@/components/Photo";
 
 export default function Home() {
   return (
