@@ -25,6 +25,7 @@ body {
     @apply rounded;
 }
 
+
 #marquee-container h2 {
     animation: move-rtl 20s linear infinite;
 }
