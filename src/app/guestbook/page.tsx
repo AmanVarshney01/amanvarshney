@@ -1,7 +1,8 @@
 import { sql } from "@vercel/postgres";
 import MessageForm from "@/app/guestbook/MessageForm";
 
-export const revalidate = 1;
+// export const revalidate = 1;
+export const dynamic = 'force-dynamic'
 
 export default async function page(): Promise<JSX.Element> {
     const { rows } = await sql`SELECT * from entries`;
