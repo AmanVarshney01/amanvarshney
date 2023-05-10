@@ -21,12 +21,13 @@ export default function MessageForm() {
         }).catch(() => {
             console.log("Error")
         })
+        alert("Message Sent!")
     }
 
     return (
         <form onSubmit={handleSubmit} className={"flex lg:flex-row flex-col w-full justify-between gap-2"}>
-            <input required type="text" name="name" id="name" placeholder={"Your Name"} className={"flex-3 p-1 rounded-sm"} />
-            <input required type="text" name="message" id="message" placeholder={"Your Message"} className={"flex-1 p-1 rounded-sm"} />
+            <input required type="text" name="name" id="name" placeholder={"Your Name"} className={"flex-3 p-1 rounded-sm text-black"} />
+            <input required type="text" name="message" id="message" placeholder={"Your Message"} className={"flex-1 p-1 rounded-sm text-black"} />
             <button type="submit" className={"p-2 rounded-sm bg-[#121212] dark:bg-[#f2f2f2] text-white dark:text-black hover:scale-105"}>Submit</button>
         </form>
     )
