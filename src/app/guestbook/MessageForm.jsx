@@ -25,7 +25,7 @@ export default function MessageForm() {
     //     alert("Message Sent!")
     // }
 
-    const handleSubmit = async (formData: FormData) => {
+    const handleSubmit = async (formData) => {
         'use server';
 
         const {name, message} = Object.fromEntries(formData.entries())
