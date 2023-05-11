@@ -4,9 +4,9 @@ import {useRef} from "react";
 
 export default function MessageForm() {
 
-    const formRef = useRef<HTMLFormElement>(null)
+    const formRef = useRef(null)
 
-    const handleSubmit = async (formData: FormData) => {
+    const handleSubmit = async (formData) => {
 
         const {name, message} = Object.fromEntries(formData.entries())
         // @ts-ignore
