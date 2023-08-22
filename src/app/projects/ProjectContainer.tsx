@@ -25,7 +25,7 @@ export default function ProjectContainer() {
                          description={"My Handpicked suggestions of movies, anime, shows, animated movies."}
                          link={"https://suggestmeaman.vercel.app/"}
                          github={"https://github.com/AmanVarshney01/SuggestMeAman"}
-                         inDevelopment={true}
+                         inDevelopment={false}
             />
         </div>
     )
