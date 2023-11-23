@@ -13,13 +13,13 @@ export default function ProjectContainer() {
                          link={"https://news-verifier.vercel.app/"}
                          github={"https://github.com/AmanVarshney01/news-verifier"}
             />
-            <ProjectCard src={CollegeClub}
+            {/* <ProjectCard src={CollegeClub}
                          name={"College Club Template"}
                          description={"College Club Template is designed to help college clubs create a professional and functional website with ease."}
                          link={"https://college-club.vercel.app/"}
                          github={"https://github.com/AmanVarshney01/college-club"}
                          inDevelopment={true}
-            />
+            /> */}
             <ProjectCard src={SuggestMeAman}
                          name={"Suggest Me Aman"}
                          description={"My Handpicked suggestions of movies, anime, shows, animated movies."}
